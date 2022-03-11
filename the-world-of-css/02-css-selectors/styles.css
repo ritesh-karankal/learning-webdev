@@ -1,0 +1,173 @@
+/* Element selector */
+body {
+    background-color: #f1faee;
+}
+
+/* List */
+h1, h2 {
+    color: #1d3557;
+}
+
+button {
+    background-color: #a8dadc;
+    /* font-size: 30px; */
+}
+
+/* ID selector */
+#signup {
+    background-color: #1d3557;
+    color: #f1faee;
+}
+
+/* Class selector */
+.tag {
+    color: #f1faee;
+    background-color: #e63946;
+    font-size: 16px;
+}
+
+/* Descendant selector */
+.post a {
+    color: #457b9d;
+    text-decoration: none;
+}
+
+footer a {
+    color: #e63946;
+}
+
+/* Adjacent selector */
+h2 + button {
+    font-size: 20px;
+}
+
+/* Direct Descendant selector */
+nav > a {
+    color: #1d3557;
+}
+
+/* Attribute selector */
+input[type="password"] {
+    color: greenyellow;
+}
+
+a[href*="google"] {
+    color: magenta;
+}
+
+/* Pseudo Classes */
+.post button:hover {
+    background-color: #e63946;
+    color: #f1faee;
+}
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+.post button:active {
+    background-color: #02c39a;
+}
+
+.post:nth-of-type(3n){
+    background-color: #dfe8dc;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    border: 1px solid black;
+  }
+
+#board {
+    display: flex;
+    margin: 0 auto;
+    width: 500px;
+    flex-wrap: wrap;
+  }
+
+.square:nth-of-type(2n) {
+    background-color: white;
+}
+.square:nth-of-type(2n+1) {
+    background-color: black;
+}
+
+/* Pseudo Elements */
+h2::first-letter {
+    font-size: 40px;
+}
+
+p::first-line {
+    color: #02c39a;
+}
+
+p::selection {
+    color: #f1faee;
+    background-color: #02c39a;
+}
+
+/* THE CASCADE */
+/* The order your styles are declare in and linked to matters! */
+h1 {
+    color: red;
+}
+h1 {
+    color: purple;
+}
+/* Purple WINS! */
+
+/* 
+    Specificity -
+    how the browser decides which rule to apply when there is conflict 
+    specific selector WINS! 
+*/
+
+/* specificity - 100 */
+#signup {
+    background-color: #1d3557;
+    color: #f1faee;
+}
+/* specificity - 21 */
+.post button:hover {
+    background-color: #e63946;
+    color: #f1faee;
+}
+/* specificity - 11 */
+button:hover {
+    background-color: #ee9b00;
+}
+
+
+/* ID > CLASS > ELEMENT */
+section p {
+    color: teal;
+}
+/*  
+    id selector - 0
+    class, attribute & - 0 
+    pseudo-class selector
+    element selector - 2
+    total specificity score - 2
+ 
+*/
+#submit {
+    color: olive;
+}
+/*  
+    id selector - 1
+    class, attribute & - 0 
+    pseudo-class selector
+    element selector - 0
+    total specificity score -  100
+    read left to right
+*/
+
+/* 
+    Don't use this-
+    Inline styles are most specific 
+    !important will override any style and is the most most specific.
+*/
+
+/* Inheritance */

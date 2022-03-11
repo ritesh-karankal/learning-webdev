@@ -1,0 +1,22 @@
+h2 {
+    color: #001219;
+    background-color: rgb(148, 210, 189);
+}
+
+button {
+    color: white;
+    background-color: #005f73;
+}
+
+p {
+    color: #8d191d;
+    background: rgb(253, 201, 103);
+}
+
+body {
+    background-color: #efe;
+    /* #efe = #eeffee */
+}
+
+
+

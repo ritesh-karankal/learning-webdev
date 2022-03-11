@@ -1,0 +1,82 @@
+html {
+    font-size: 10px;
+}
+
+/* Percentage */
+#percentages {
+    /* section */
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+    background-color: #f4a261;
+}
+
+#percentages div {
+    width: 50%;
+    height: 50%;
+    background-color: #e76f51;
+}
+
+/* EM's */
+#ems {
+    font-size: 20px; 
+}
+
+#ems h2 {
+    font-size: 2em;
+    margin-left: 1em;
+    /* 1em margin will be equal to font-size of element itself(h2) 
+    as it is 2em 20px(parent-article) x 2 = 40px  */
+}
+
+#ems h3 {
+    font-size: 1.5em;
+}
+
+/* #ems button {
+    font-size: 20px;
+    padding: 0 30px;
+    border-radius: 15px;
+    background-color: #2a9d8f;
+    color: white;
+} */
+/* If we increase size of button other properties won't be relative
+ and button will not be of same shape as small button */
+ 
+button {
+    font-size: 1em;
+    padding: 0 1em;
+    border-radius: 0.5em;
+    background-color: #2a9d8f;
+    color: white;
+}
+/* every button will be relative to it's parent */
+
+/* Shortcoming of EM's */
+#ems ul {
+    font-size: 1.2em;
+}
+/* they can stack as we nest further it will multiply based on their parent*/
+
+
+/* REM's root em's*/
+/* As em's derive size from its parent 
+    rem's derive its size from root html element i.e <html> */
+
+#rems h2 {
+    font-size: 3rem;
+}
+
+#rems h3 {
+    font-size: 2rem;
+}
+
+#rems ul {
+    font-size: 0.8rem;
+}
+
+#rems button{
+    font-size: 2rem;
+}
+/* the font size will always based upon root element
+ will not change until html size changes */

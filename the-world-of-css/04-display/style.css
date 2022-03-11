@@ -1,0 +1,47 @@
+/* 
+    Display property
+
+    Block
+    Block elements break the flow of a document. 
+    Width, Height, Margin, & Padding are respected.
+
+    Inline  
+    Width & Height are ignored. Margin & padding push 
+    elements away horizontally but not vertically 
+
+    Inline - Block
+    Behaves like an inline element except 
+    Width, Height, Margin, & Padding are respected.   
+*/
+
+h1 {
+    background-color: #fcd5ce;
+    border: 1px solid black;
+    /* display: inline; */
+    display: none;
+    /* makes element invisible they don't take space 
+     but its there in the document */
+}
+
+span {
+    background-color: #e8a598;
+    border: 1px solid black;
+    /* display: block; */
+    width: 100px;
+    padding: 100px;
+    /* It is not respected */
+}
+
+div { 
+    width: 200px;
+    height: 200px;
+    background-color: #f08080;
+    border: 2px solid black;
+    /* display: inline; */
+    display: inline-block;
+    margin: 50px;
+    
+}
+
+
+

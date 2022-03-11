@@ -1,0 +1,18 @@
+section {
+    width:500px;
+    height: 500px;
+    background-color: #94d2bd;
+    margin-bottom: 20px;
+}
+
+#rgba {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255,255,255,0.7);
+    /* w */
+}
+
+#opacity {
+    width: 200px;
+    height: 200px;
+}

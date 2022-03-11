@@ -1,0 +1,88 @@
+/* body also has default margin */
+body {
+    margin: 0;
+}
+
+/* Width and Height of content area */
+div {
+    width: 200px;
+    height: 200px;
+}
+
+h1 {
+    width: 200px;
+    background-color:#f4a261;
+    margin: 0;
+}
+
+span {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+/* Border and properties */
+#one {
+    background-color: #99e2b4;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #4a5759;
+    /* The box-sizing CSS property sets how the total width and height of an element is calculated. 
+       By default the width of the div will become 200 + 10(border-width)  210x210
+       border is subtracted from content area
+       It acts kind of like inner border */
+    box-sizing: border-box;
+    /* width will be 200x200 now */
+    margin-left: 50px;
+    margin-bottom: 100px;
+}
+
+#two {
+    background-color: #56ab91;
+    border-width: 2px;
+    border-style: dashed;
+    border-color: #4a5759;
+    margin: 200px;
+}
+
+#three {
+    background-color: #14746f;
+    /* order - width/style/color */
+    border: 2px solid black;
+    border-left-style: dashed;
+    border-radius: 5%;
+}
+/* 
+.card {
+    width: 210px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    text-align: center;
+}
+.card img {
+    width: 200px;
+    border: 5px solid rgb(236,183,191);
+    border-radius: 50%;
+} */
+
+/* Padding */
+/* space between content area and border
+   like padding of sterofoam in fragile parcel boxes 
+   or layer of fat between muscles and skin
+   
+   All four sides
+   padding: 20px;
+
+   veritcal | horizontal
+   padding: 10px 20px;
+   padding: 0 20px;
+   
+   top | right | bottom | left (clockwise)
+   padding: 5px 1px 0 2px;
+   */
+
+button {
+    padding: 10px 20px 30px 40px;
+}
+
+/* Margin */
+/* spacing between outside of border between that element and other things */
+
