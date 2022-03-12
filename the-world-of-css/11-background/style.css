@@ -1,0 +1,25 @@
+section {
+  width: 80%;
+  height: 600px;
+  margin: 0 auto;
+  /* background-color: aliceblue; */
+
+  /* background is shorthand property */
+  /* background: url("https://images.unsplash.com/photo-1564442038901-4f9a19d3d456?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1227&q=80"); */
+  /* background-size: cover; */
+  /* background-position: top; */
+
+  /* order doesn't matter but background size should be immediately after position*/
+  background: center/cover
+    url("https://images.unsplash.com/photo-1564442038901-4f9a19d3d456?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1227&q=80");
+  /* background: center/40% no-repeat burlywood url("https://images.unsplash.com/photo-1564442038901-4f9a19d3d456?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1227&q=80"); */
+}
+
+h1 {
+  color: white;
+  font-size: 150px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: lighter;
+  text-align: center;
+  text-shadow: black -6px 6px;
+}

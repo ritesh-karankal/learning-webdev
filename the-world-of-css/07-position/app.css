@@ -12,29 +12,52 @@ div {
     background-color: #81b29a;
 }
 
-#static #middle {
-    position: static;
-    top: 100px;
-}
+/* The element is positioned according to the normal flow of the document.
+ The top, right, bottom, left, and z-index properties have no effect. */
+ #static #middle {
+     position: static;
+     top: 100px;
+ }
 
-#relative #middle {
-    position: relative;
-    top: 50px;
-    left: 50px;
-}
+ /* The element is positioned according to the normal flow of the document, 
+ and then offset relative to itself based on the values of top, right, bottom, and left */
+ /* The offset of left will be the space on the left and element leaves that much
+ space in the left and moves right */
+ #relative #middle {
+     position: relative;
+     top: 50px;
+     left: 50px;
+     /* left: -50px; */
+ }
+ /* The element is removed from the normal document flow and no space is created for that element in layout.
+ It is positioned relative to its closest positioned ancestor, if any; otherwise, it is placed relative to 
+ the initial containing block i.e. body*/
+ #absolute {
+     position: relative;
+ }
 
-#absolute {
-    position: relative;
-}
-
-#absolute #middle {
+ #absolute #middle {
     position: absolute;
     top: 1px;
     left: 1px;
-}
+ }
 
-#fixed #middle {
-    position: fixed;
-    top: 0;
-    left: 400px;
-}
+ /* The element is removed from the normal document flow, and no space is created for the element in the page layout.
+  It is positioned relative to the initial containing block i.e. body */
+ #fixed #middle {
+     position: fixed;
+     top: 50px;
+     left: 400px;
+ }
+
+ /* The element is positioned according to the normal flow of the document, and then offset relative to its nearest 
+ scrolling ancestor and containing block (nearest block-level ancestor).
+ Begins not fixed from top and then scroll alongs the content and it stays there Sticks!*/
+ /* not fixed then fixed */
+ #sticky #middle {
+     /* now browsers does not support sticky 
+     so this properties enables sticky for them */
+     position: -webkit-sticky;
+     position: sticky;
+     top: 0;
+ }

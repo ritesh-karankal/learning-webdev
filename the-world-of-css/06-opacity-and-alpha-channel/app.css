@@ -9,10 +9,17 @@ section {
     width: 200px;
     height: 200px;
     background-color: rgba(255,255,255,0.7);
-    /* w */
+    /* background-color: #ffc52400; */
+    /* only transparency of background changes not other things*/
+    /* 0 - completely transparent */
+    /* 1 - opaque */
 }
 
 #opacity {
     width: 200px;
     height: 200px;
+    background-color: #ffbc02;
+    opacity: 0.7;
+    /* we set opacity on an element and it governs the transparency
+     of that whole element and its descendants too */
 }

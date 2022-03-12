@@ -1,0 +1,22 @@
+img {
+  width: 30%;
+  /* margin: 1.66666%; */
+  margin: calc(10% / 6);
+}
+
+/* Tip - for sizes start with a hardcoded no. in px then decide it in % */
+/* We never use % for font sizes */
+/*  30 + 30 + 30
+ 10% */
+
+nav {
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin-left: calc(10% / 6);
+  width: 30%;
+  padding: 1.2em 0;
+  border-bottom: 2px solid #f1f1f1;
+}
+/* Use em in padding and font size because as font size increases padding increases */
