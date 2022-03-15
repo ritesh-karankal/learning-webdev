@@ -1,0 +1,153 @@
+body {
+    font-family: "Open Sans", sans-serif;
+}
+h1 {
+    text-align: center;
+}
+#container {
+    background-color: #003049;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display: flex; /* It turns on flexbox */
+    /* Elements will be contained in the parent by adjusting sizes */
+
+    /* Flex Direction *
+     * sets the direction for main axis and cross axis */
+    flex-direction: row;            /* default is row - the main axis goes from left to right horizontally */
+    flex-direction: row-reverse;    /* the main axis goes reverse starting from right to left horizontally */
+    flex-direction: column;         /* the main axis goes vertically from top to bottom */
+    flex-direction: column-reverse; /* the main axis goes vertically from bottom to top */
+
+    /* Justify Content (align elements along main-axis) *
+     * How elements are distributed across the main axis 
+     * It depends on flex direction It behavior depends on flex-direction and if flex-direction changes 
+       it behaves different 
+     */
+    justify-content: flex-start; /* default */
+    justify-content: flex-end;   /* it does not reverse or start element from end just align them to end */
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: space-evenly;
+
+    /* Align Items (align elements along cross-axis) */
+    align-items: center;
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: baseline; /* hello examples */
+
+    /* Flex Wrap *
+     * It determines whether our elements are going to wrap along main axis onto
+       new line if its row 
+       wrap-reverse changes the reverses the cross-axis 
+     */
+    flex-wrap: wrap; /* it can't reverse the flow of elements its just they wrap reverse */
+    flex-wrap: wrap-reverse; /* the cross-axis direction changes from default left to right to right to left so 
+    elements wrap from right to left. */
+    /* Reverse works like a mirror reflection image of normal */
+    flex-wrap: nowrap;
+
+    /* Align Content *
+     * Use to control space along cross axis if we have multiple rows or column depending on row or column based layout 
+     * Space between rows or space between columns depending on the basis of orientation of cross-axis 
+     * it does nothing if we don't have flex wrap */
+    /* when we are in rows layout it controls the space between rows on cross axis */
+    flex-direction: row;
+    justify-content: center; 
+    align-items: flex-start;
+    align-content: space-between;
+    flex-wrap: wrap;
+
+    /* when we are in column layout it controls the space between columns on cross axis */
+    flex-direction: column;
+    justify-content: center; 
+    align-items: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+
+    /* Flex Self *
+     * align individual item in a flex container 
+     * We apply it to individual element not flex container 
+     * we can change alignment using it for any individual element across cross-axis */
+     align-self: flex-end;
+     align-self: flex-start;
+     align-self: baseline;
+
+}
+
+#container div {
+    height: 200px;
+    width: 400px;
+
+    /* Flex - Basis, Grow, & Shrink */
+     /* Related and Applied to individual items in a container how the behave when there is more space or less space */
+
+     /* Flex-Basis */
+     /* Defines the initial size of an element before additional space is distributed */
+     /* Initial size that an element should be added as*/
+     flex-basis: 400px;
+
+     flex-grow: 1;
+    /* Applied to all They all will share space evenly */
+    max-width: 300px;
+    /* doesn't let element to go beyond this */
+}
+
+div:nth-of-type(1) {
+    background-color: #80ffdb;
+    
+     /* Flex-Grow */
+     /* Controls the amount of available space an element should take up .
+        Accepts a unit-less number value like 1 or 2 */
+        flex-grow: 1;
+
+    /* Flex-Shrink */
+    /* If items are larger than the container, they shrink according to flex-shrink */ 
+}
+
+div:nth-of-type(2) {
+    background-color: #64dfdf;
+    /* height: 300px; */
+    /* font-size: 3em; */
+    flex-shrink: 2;
+}
+
+div:nth-of-type(3) {
+    background-color: #48bfe3;
+    
+}
+
+div:nth-of-type(4) {
+    background-color: #5390d9;
+    /* font-size: 3em; */
+}
+
+div:nth-of-type(5) {
+    background-color: #6930c3;
+    /* height: 100px; */
+    flex-grow: 2;
+    flex-shrink: 0;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    border: 5px solid black;
+    height: 500px;
+    display: flex;
+}
+
+main .sidebar {
+    background-color: #6930c3;
+    /* Flex Shorthand */
+    /* flex-grow | flex-shrink | flex-basis */
+    flex: 1 2 300px;
+    
+}
+
+main .maincontent {
+    background-color: #64dfdf;
+    flex: 2 800px;
+}

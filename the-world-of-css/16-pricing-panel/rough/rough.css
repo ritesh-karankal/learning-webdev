@@ -1,0 +1,19 @@
+body {
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.pricing-plan {
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 15px 25px;
+}
+
+.pricing-img {
+    margin-bottom: 20px;
+}
